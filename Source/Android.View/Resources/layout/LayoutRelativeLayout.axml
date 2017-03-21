@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+    <View
+        android:id="@+id/viewYellow"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFFF00" />
+    <View
+        android:id="@+id/viewGrey"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/viewYellow"
+        android:layout_alignTop="@+id/viewYellow"
+        android:layout_marginStart="20dp"
+        android:background="#808080" />
+    <View
+        android:id="@+id/viewStreelblue"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/viewYellow"
+        android:layout_alignStart="@+id/viewYellow"
+        android:layout_marginTop="20dp"
+        android:background="#4682B4" />
+    <View
+        android:id="@+id/viewRed"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/viewStreelblue"
+        android:layout_alignStart="@+id/viewGrey"
+        android:layout_marginTop="20dp"
+        android:background="#FF0000" />
+</RelativeLayout>

@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="72">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="4">
+            <objects>
+                <viewController id="5" sceneMemberID="viewController" customClass="ViewControllerHome" storyboardIdentifier="ViewControllerHome" automaticallyAdjustsScrollViewInsets="NO">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2"/>
+                        <viewControllerLayoutGuide type="bottom" id="3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="11" translatesAutoresizingMaskIntoConstraints="NO" image="TitleImageHome" clipsSubviews="YES">
+                                <rect key="frame" x="0.0" y="20" width="600" height="72"/>
+                                <constraints>
+                                    <constraint id="15" firstItem="11" firstAttribute="height" constant="72"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="19" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="158" width="600" height="442"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="20">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="20" id="21">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="25" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="8" y="100" width="584" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="42" firstItem="25" firstAttribute="height" constant="50"/>
+                                </constraints>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="12" firstItem="11" firstAttribute="top" secondItem="2" secondAttribute="bottom"/>
+                            <constraint id="13" firstItem="11" firstAttribute="leading" secondItem="6" secondAttribute="leading"/>
+                            <constraint id="14" firstItem="6" firstAttribute="trailing" secondItem="11" secondAttribute="trailing"/>
+                            <constraint id="27" firstItem="25" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="8"/>
+                            <constraint id="28" firstItem="6" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" constant="8"/>
+                            <constraint id="30" firstItem="3" firstAttribute="top" secondItem="19" secondAttribute="bottom"/>
+                            <constraint id="31" firstItem="19" firstAttribute="leading" secondItem="6" secondAttribute="leading"/>
+                            <constraint id="32" firstItem="6" firstAttribute="trailing" secondItem="19" secondAttribute="trailing"/>
+                            <constraint id="37" firstItem="25" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="8"/>
+                            <constraint id="43" firstItem="19" firstAttribute="top" secondItem="25" secondAttribute="bottom" constant="8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Message" destination="25" id="name-outlet-25"/>
+                        <outlet property="Items" destination="19" id="name-outlet-19"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="-316"/>
+        </scene>
+        <scene sceneID="71">
+            <objects>
+                <navigationController id="72" sceneMemberID="viewController" customClass="NavigationController" storyboardIdentifier="NavigationController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="74">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="276" destination="5" kind="showDetail"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="-309"/>
+        </scene>
+        <scene sceneID="412">
+            <objects>
+                <viewController id="413" sceneMemberID="viewController" customClass="ViewControllerMenu" storyboardIdentifier="ViewControllerMenu" automaticallyAdjustsScrollViewInsets="NO">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="410"/>
+                        <viewControllerLayoutGuide type="bottom" id="411"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="414">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="448" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="8" y="28" width="584" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="452" firstItem="448" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="453" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="76" width="600" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="454">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="454" id="455">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="449" firstItem="448" firstAttribute="top" secondItem="410" secondAttribute="bottom" constant="8"/>
+                            <constraint id="450" firstItem="448" firstAttribute="leading" secondItem="414" secondAttribute="leading" constant="8"/>
+                            <constraint id="451" firstItem="414" firstAttribute="trailing" secondItem="448" secondAttribute="trailing" constant="8"/>
+                            <constraint id="456" firstItem="453" firstAttribute="top" secondItem="448" secondAttribute="bottom" constant="8"/>
+                            <constraint id="457" firstItem="453" firstAttribute="leading" secondItem="414" secondAttribute="leading"/>
+                            <constraint id="458" firstItem="411" firstAttribute="top" secondItem="453" secondAttribute="bottom"/>
+                            <constraint id="459" firstItem="414" firstAttribute="trailing" secondItem="453" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Message" destination="448" id="name-outlet-448"/>
+                        <outlet property="Items" destination="453" id="name-outlet-453"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="415" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="-313"/>
+        </scene>
+        <scene sceneID="467">
+            <objects>
+                <viewController id="468" sceneMemberID="viewController" customClass="ViewControllerLayoutUIStackViewVertical" storyboardIdentifier="ViewControllerLayoutUIStackViewVertical" automaticallyAdjustsScrollViewInsets="NO">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="465"/>
+                        <viewControllerLayoutGuide type="bottom" id="466"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="469">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="487" translatesAutoresizingMaskIntoConstraints="NO" distribution="equalSpacing" alignment="center" spacing="8">
+                                <rect key="frame" x="8" y="28" width="584" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="492" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="172" y="0.0" width="240" height="68"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="0" alpha="1"/>
+                                        <subviews/>
+                                        <constraints>
+                                            <constraint id="579" firstItem="492" firstAttribute="height" constant="68"/>
+                                            <constraint id="580" firstItem="492" firstAttribute="width" constant="240"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="502" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="207.5" y="77" width="169" height="60"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1"/>
+                                        <subviews/>
+                                        <constraints>
+                                            <constraint id="581" firstItem="502" firstAttribute="height" constant="60"/>
+                                            <constraint id="582" firstItem="502" firstAttribute="width" constant="169"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="503" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="134.5" y="146" width="315" height="117"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.27450980392156865" green="0.50980392156862742" blue="0.70588235294117652" alpha="1"/>
+                                        <subviews/>
+                                        <constraints>
+                                            <constraint id="583" firstItem="503" firstAttribute="height" constant="117"/>
+                                            <constraint id="584" firstItem="503" firstAttribute="width" constant="315"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="514" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="172" y="272" width="240" height="128"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="585" firstItem="514" firstAttribute="height" constant="128"/>
+                                            <constraint id="586" firstItem="514" firstAttribute="width" constant="240"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="576" firstItem="487" firstAttribute="height" constant="400"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="488" firstItem="487" firstAttribute="top" secondItem="465" secondAttribute="bottom" constant="8"/>
+                            <constraint id="489" firstItem="487" firstAttribute="leading" secondItem="469" secondAttribute="leading" constant="8"/>
+                            <constraint id="491" firstItem="469" firstAttribute="trailing" secondItem="487" secondAttribute="trailing" constant="8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="470" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="-1037"/>
+        </scene>
+        <scene sceneID="474">
+            <objects>
+                <viewController id="475" sceneMemberID="viewController" customClass="ViewControllerLayoutUIStackViewHorizontal" storyboardIdentifier="ViewControllerLayoutUIStackViewHorizontal" automaticallyAdjustsScrollViewInsets="NO">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="472"/>
+                        <viewControllerLayoutGuide type="bottom" id="473"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="476">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" id="533" translatesAutoresizingMaskIntoConstraints="NO" distribution="equalSpacing" alignment="center" spacing="8">
+                                <rect key="frame" x="8" y="28" width="350" height="564"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="534" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="232" width="40" height="100"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="0" alpha="1"/>
+                                        <subviews/>
+                                        <constraints>
+                                            <constraint id="587" firstItem="534" firstAttribute="width" constant="40"/>
+                                            <constraint id="588" firstItem="534" firstAttribute="height" constant="100"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="535" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="73.5" y="252" width="30" height="60"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1"/>
+                                        <subviews/>
+                                        <constraints>
+                                            <constraint id="589" firstItem="535" firstAttribute="width" constant="30"/>
+                                            <constraint id="590" firstItem="535" firstAttribute="height" constant="60"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="536" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="136.5" y="182" width="80" height="200"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.27450980392156865" green="0.50980392156862742" blue="0.70588235294117652" alpha="1"/>
+                                        <subviews/>
+                                        <constraints>
+                                            <constraint id="591" firstItem="536" firstAttribute="width" constant="80"/>
+                                            <constraint id="592" firstItem="536" firstAttribute="height" constant="200"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="537" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="250" y="207" width="100" height="150"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                        <constraints>
+                                            <constraint id="593" firstItem="537" firstAttribute="width" constant="100"/>
+                                            <constraint id="594" firstItem="537" firstAttribute="height" constant="150"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="549" firstItem="533" firstAttribute="width" constant="350"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="538" firstItem="473" firstAttribute="top" secondItem="533" secondAttribute="bottom" constant="8"/>
+                            <constraint id="539" firstItem="533" firstAttribute="top" secondItem="472" secondAttribute="bottom" constant="8"/>
+                            <constraint id="540" firstItem="533" firstAttribute="leading" secondItem="476" secondAttribute="leading" constant="8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="477" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2553" y="-1039"/>
+        </scene>
+        <scene sceneID="481">
+            <objects>
+                <viewController id="482" sceneMemberID="viewController" customClass="ViewControllerLayoutContraints" storyboardIdentifier="ViewControllerLayoutContraints">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="479"/>
+                        <viewControllerLayoutGuide type="bottom" id="480"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="483">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="550" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="44" width="120" height="54"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="0" alpha="1"/>
+                                <subviews/>
+                                <constraints>
+                                    <constraint id="559" firstItem="550" firstAttribute="width" constant="120"/>
+                                    <constraint id="560" firstItem="550" firstAttribute="height" constant="54"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" id="551" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="180" y="13" width="96" height="116"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1"/>
+                                <subviews/>
+                                <constraints>
+                                    <constraint id="561" firstItem="551" firstAttribute="width" constant="96"/>
+                                    <constraint id="562" firstItem="551" firstAttribute="height" constant="116"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" id="552" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="128" y="169" width="200" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.27450980392156865" green="0.50980392156862742" blue="0.70588235294117652" alpha="1"/>
+                                <subviews/>
+                                <constraints>
+                                    <constraint id="563" firstItem="552" firstAttribute="height" constant="80"/>
+                                    <constraint id="564" firstItem="552" firstAttribute="width" constant="200"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" id="553" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="13" y="269" width="174" height="90"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                <constraints>
+                                    <constraint id="577" firstItem="553" firstAttribute="width" constant="174"/>
+                                    <constraint id="578" firstItem="553" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="554" firstItem="550" firstAttribute="top" secondItem="479" secondAttribute="bottom" constant="24"/>
+                            <constraint id="555" firstItem="550" firstAttribute="leading" secondItem="483" secondAttribute="leading" constant="40"/>
+                            <constraint id="556" firstItem="551" firstAttribute="leading" secondItem="550" secondAttribute="trailing" constant="20"/>
+                            <constraint id="557" firstItem="551" firstAttribute="centerY" secondItem="550" secondAttribute="centerY"/>
+                            <constraint id="558" firstItem="552" firstAttribute="top" secondItem="551" secondAttribute="bottom" constant="40"/>
+                            <constraint id="565" firstItem="551" firstAttribute="centerX" secondItem="552" secondAttribute="centerX"/>
+                            <constraint id="566" firstItem="553" firstAttribute="top" secondItem="552" secondAttribute="bottom" constant="20"/>
+                            <constraint id="595" firstItem="553" firstAttribute="centerX" secondItem="550" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="484" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3175" y="-1042"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TitleImageHome" width="480" height="160"/>
+        <image name="Controls" width="93.3333359" height="93.3333359"/>
+        <image name="Layout" width="93.3333359" height="93.3333359"/>
+        <image name="Lists" width="93.3333359" height="93.3333359"/>
+    </resources>
+</document>

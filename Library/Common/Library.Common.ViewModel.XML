@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library.Common.ViewModel</name>
+    </assembly>
+    <members>
+        <member name="T:Library.Common.ViewModel.NotifyPropertyChangeObjectBase">
+            <summary>
+            The class NotifyPropertyChangeObjectBase implements the <see cref="T:System.ComponentModel.INotifyPropertyChanged"/> interface. It implements convenience methods that
+            may be used by clases than need to implement this interface. These classes should derive from NotifyPropertyChangeObjectBase.
+            </summary>
+        </member>
+        <member name="E:Library.Common.ViewModel.NotifyPropertyChangeObjectBase.PropertyChanged">
+            <summary>
+            The even raised when the value of a propery changes.
+            </summary>
+        </member>
+        <member name="M:Library.Common.ViewModel.NotifyPropertyChangeObjectBase.RaisePropertyChanged(System.String)">
+            <summary>
+            Raises the <see cref="E:Library.Common.ViewModel.NotifyPropertyChangeObjectBase.PropertyChanged"/> event.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Library.Common.ViewModel.NotifyPropertyChangeObjectBase.SetField``1(``0@,``0,System.String)">
+            <summary>
+            Sets the specified field of the derived class.
+            </summary>
+            <typeparam name="T">The type of the field.</typeparam>
+            <param name="field">A reference to the field.</param>
+            <param name="value">The value for the field.</param>
+            <param name="propertyName">Name of the property the field is backing.</param>
+            <returns>
+            This method returns <c>true</c> is the field's value changes; <c>false</c> otherwise.
+            </returns>
+            <remarks>
+            Properties that raise the <see cref="E:Library.Common.ViewModel.NotifyPropertyChangeObjectBase.PropertyChanged"/> event should have a backing field. This method should be used to
+            set the value of the backing field.
+            </remarks>
+        </member>
+    </members>
+</doc>

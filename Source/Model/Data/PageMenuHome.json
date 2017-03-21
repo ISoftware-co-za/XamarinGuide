@@ -1,0 +1,23 @@
+﻿{
+  "Message": "Welcome to the ISoftware Xamarin platform explorer. Explore Android, iOS and WUP features",
+  "Items": [
+    {
+      "Identifier": "Layout",
+      "Label": "Layout",
+      "Description": "Containers for other widgets.",
+      "Image": "Layout.png"
+    },
+    {
+      "Identifier": "Lists",
+      "Label": "Lists",
+      "Description": "List to display, select and edit items.",
+      "Image": "Lists.png"
+    },
+    {
+      "Identifier": "Controls",
+      "Label": "Controls",
+      "Description": "Data entry widgets.",
+      "Image": "Controls.png"
+    }
+  ]
+}

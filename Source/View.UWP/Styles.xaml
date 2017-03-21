@@ -1,0 +1,49 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Toolbar -->
+
+    <Style x:Key="Toolbar" TargetType="Grid">
+        <Setter Property="Background" Value="#4682B4" />
+        <Setter Property="Padding" Value="16"/>
+    </Style>
+
+    <Style x:Key="ToolbarTitle" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#FFFFFF" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+    
+    <!-- Page -->
+
+    <Style x:Key="PageMessage" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="Margin" Value="8" />
+    </Style>
+
+    <Style TargetType="ListBox">
+        <Setter Property="Background" Value="White" />
+    </Style>
+
+    <!-- Menu -->
+
+    <Style x:Key="MenuItemIcon" TargetType="Image">
+        <Setter Property="Width" Value="50" />
+        <Setter Property="Height" Value="50" />
+    </Style>
+    
+    <Style x:Key="MenuItemTitle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Foreground" Value="Black" />
+    </Style>
+
+    <Style x:Key="MenuItemDescription" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="#A0A0A0" />
+    </Style>
+
+</ResourceDictionary>

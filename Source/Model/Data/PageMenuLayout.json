@@ -1,0 +1,50 @@
+﻿{
+  "Message": "Welcome to the ISoftware Xamarin platform explorer. Explore Android, iOS and WUP features",
+  "Items": [
+    {
+      "Identifier": "VerticalLayout",
+      "Label": "Vertical Layout",
+      "Description": "Stack widgets vertically.",
+      "Image": "Layout.png",
+      "SupportedOnAndroid": "true",
+      "SupportedOniOS": "true",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "HorizontalLayout",
+      "Label": "Horizonal Layout",
+      "Description": "Stack wigets horizontally.",
+      "Image": "Lists.png",
+      "SupportedOnAndroid": "true",
+      "SupportedOniOS": "true",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "RelativeLayout",
+      "Label": "Relative Layout",
+      "Description": "Layout widgets relative to parent or siblings.",
+      "Image": "Controls.png",
+      "SupportedOnAndroid": "true",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "GridLayout",
+      "Label": "Grid Layout",
+      "Description": "Layout widget in a grid.",
+      "Image": "Controls.png",
+      "SupportedOnAndroid": "false",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "ConstraintLayout",
+      "Label": "Constraint Layout",
+      "Description": "Layout widgets using constrains.",
+      "Image": "Controls.png",
+      "SupportedOnAndroid": "true",
+      "SupportedOniOS": "true",
+      "SupportedOnWUP": "false"
+    }
+  ]
+}
