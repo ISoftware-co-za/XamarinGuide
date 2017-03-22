@@ -14,12 +14,10 @@ Microsoft understands this problem and is addressing it with the purchase of Xam
 * .NET standard 2.0 
 
 Microsoft is working on Xamarin Forms to further simplify the Android, iOS and UWP portion of the stack. This simplified stack can give an enterprise a competitive advantage with its digital transformation in today’s technologically driven world.
-Even so there is still a lot to know to develop applications for Android, iOS and the UWP. This projects is attempting to deliver a set of cheat sheet posters to give developers an overview of these Android, iOS and WUP.
-
-A set of posters with details of the three main development platforms: Android; iOS and WUP.
+Even so there is still a lot to know to develop applications for Android, iOS and the UWP. This projects is attempting to deliver a set of cheat sheet posters to give developers an overview of Android, iOS and WUP.
 
 # Accompanying Apps
-The repo contains an accompanying App for each platform. The Apps are used to verify the content of the posters and used to provide screen shots.
+The repo contains an accompanying App for each platform. The Apps are used to verify the content of the posters and will be used to provide screen shots.
 
 # Posters
 The project is still in the very early stages of development. These are the posters in their current state.
