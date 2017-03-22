@@ -1,3 +1,5 @@
+
+
 ![Title Image](Artwork/TitleImageHome.png )
 # Introduction
 Digital transformation is the buzzword, and everybody is trying to do it. The technological playing field is a complicated place with organisations needing to deliver empowering apps to their clients, useful line of business applications to their employees, and APIs for integration with their business partners. The complication is only going to worsen with the arrival of more technology platforms. Samsung is pushing Tizen and augmented reality devices are imminent.
@@ -7,6 +9,8 @@ To target the major platforms: Android; iOS; Windows and the Web you need to kno
 * Android Studio, Android, Java and the Java class libraries.
 * Visual Studio, WPF, C# and the .NET base class library.
 * Your IDE of choice for HTML, CSS, JavaScript with some server side technology.
+
+Some have tried to use Cordova, one of its variants, or Appcelerator to reduce this complexity. While this may work for in-house line of business applications, their suitability for customer facing apps is questionably. In many cases these technologies add to the already large stack.
 
 This is onerous and many enterprises are collapsing under their own technological weight, they are left stuck with no agility at all.
 Microsoft understands this problem and is addressing it with the purchase of Xamarin and the .NET standard 2.0 initiative. .NET Standard 2.0 will be implemented by .NET Framework, .NET Core, and Xamarin. With this the technology stack is reduced to:
