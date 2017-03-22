@@ -19,6 +19,16 @@ Even so there is still a lot to know to develop applications for Android, iOS an
 A set of posters with details of the three main development platforms: Android; iOS and WUP.
 
 # Accompanying Apps
-The repo also contains an accompanying App for each platform. The Apps are used to verify the content of the posters and used to provide screen shots.
+The repo contains an accompanying App for each platform. The Apps are used to verify the content of the posters and used to provide screen shots.
 
+# Posters
+The project is still in the very early stages of development. These are the posters in their current state.
+
+![Poster 1](Posters/MobileDevelopmentComparisonChart1.png)
+
+![Poster 2](Posters/MobileDevelopmentComparisonChart2.png)
+
+![Poster 3](Posters/MobileDevelopmentComparisonChart3.png)
+
+![Poster 4](Posters/MobileDevelopmentComparisonChart4.png)
 
