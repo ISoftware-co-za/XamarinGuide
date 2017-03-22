@@ -1,4 +1,4 @@
-n![Title Image](Artwork/TitleImageHome.png )
+![Title Image](Artwork/TitleImageHome.png )
 # Introduction
 Digital transformation is the buzzword, and everybody is trying to do it. The technological playing field is a complicated place with organisations needing to deliver empowering apps to their clients, useful line of business applications to their employees, and APIs for integration with their business partners. The complication is only going to worsen with the arrival of more technology platforms. Samsung is pushing Tizen and augmented reality devices are imminent.
 
