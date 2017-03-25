@@ -5,7 +5,7 @@
       "Identifier": "VerticalLayout",
       "Label": "Vertical Layout",
       "Description": "Stack widgets vertically.",
-      "Image": "Layout.png",
+      "Image": "LayoutVertical.png",
       "SupportedOnAndroid": "true",
       "SupportedOniOS": "true",
       "SupportedOnWUP": "true"
@@ -14,7 +14,7 @@
       "Identifier": "HorizontalLayout",
       "Label": "Horizonal Layout",
       "Description": "Stack wigets horizontally.",
-      "Image": "Lists.png",
+      "Image": "LayoutHorizontal.png",
       "SupportedOnAndroid": "true",
       "SupportedOniOS": "true",
       "SupportedOnWUP": "true"
@@ -23,7 +23,7 @@
       "Identifier": "RelativeLayout",
       "Label": "Relative Layout",
       "Description": "Layout widgets relative to parent or siblings.",
-      "Image": "Controls.png",
+      "Image": "LayoutRelative.png",
       "SupportedOnAndroid": "true",
       "SupportedOniOS": "false",
       "SupportedOnWUP": "true"
@@ -32,7 +32,7 @@
       "Identifier": "GridLayout",
       "Label": "Grid Layout",
       "Description": "Layout widget in a grid.",
-      "Image": "Controls.png",
+      "Image": "LayoutGrid.png",
       "SupportedOnAndroid": "false",
       "SupportedOniOS": "false",
       "SupportedOnWUP": "true"
@@ -41,10 +41,37 @@
       "Identifier": "ConstraintLayout",
       "Label": "Constraint Layout",
       "Description": "Layout widgets using constrains.",
-      "Image": "Controls.png",
-      "SupportedOnAndroid": "true",
+      "Image": "LayoutConstraint.png",
+      "SupportedOnAndroid": "false",
       "SupportedOniOS": "true",
       "SupportedOnWUP": "false"
+    },
+    {
+      "Identifier": "Border",
+      "Label": "Border",
+      "Description": "Border for a single widget.",
+      "Image": "LayoutBorder.png",
+      "SupportedOnAndroid": "false",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "WrapGridVertical",
+      "Label": "Wrapping Layout",
+      "Description": "Layout widgets in colums that wrap.",
+      "Image": "LayoutWrapGridVertical.png",
+      "SupportedOnAndroid": "false",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "WrapGridHorizontal",
+      "Label": "Wrapping Layout",
+      "Description": "Layout widgets in rows that wrap.",
+      "Image": "LayoutWrapGridHorizontal.png",
+      "SupportedOnAndroid": "false",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "true"
     }
   ]
 }

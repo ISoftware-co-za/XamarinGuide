@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+using ISoftware.Xamarin.Platforms.UWP.Layout;
 using ISoftware.Xamarin.Platforms.ViewModel.Navigation;
+using Library.Common.Exceptions;
 
 namespace ISoftware.Xamarin.Platforms.UWP
 {
@@ -12,6 +15,12 @@ namespace ISoftware.Xamarin.Platforms.UWP
         internal NavigationService(Frame frame)
         {
             _frame = frame;
+
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += (sender, e) =>
+            {
+                _frame.GoBack();
+                e.Handled = true;
+            };
         }
 
         public void Back()
@@ -31,6 +40,26 @@ namespace ISoftware.Xamarin.Platforms.UWP
 
         public void NavigateToPage(string identifier)
         {
+            Type pageType = null;
+
+            if (identifier == "VerticalLayout")
+                pageType = typeof(PageLayoutStackPanelVertical);
+            else if (identifier == "HorizontalLayout")
+                pageType = typeof(PageLayoutStackPanelHorizontal);
+            else if (identifier == "RelativeLayout")
+                pageType = typeof(PageLayoutRelativePanel);
+            else if (identifier == "GridLayout")
+                pageType = typeof(PageLayoutGrid);
+            else if (identifier == "Border")
+                pageType = typeof(PageLayoutBorder);
+            else if (identifier == "WrapGridVertical")
+                pageType = typeof(PageLayoutVariableWidthWrapGridVertical);
+            else if (identifier == "WrapGridHorizontal")
+                pageType = typeof(PageLayoutVariableWidthWrapGridHorizontal);
+            else
+                throw new DeveloperException($"Cannot navigate to {identifier} as it is an undefined destination.");
+
+            _frame.Navigate(pageType, null);
         }
 
         private readonly Frame _frame;

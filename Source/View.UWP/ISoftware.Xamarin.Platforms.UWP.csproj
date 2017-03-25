@@ -96,6 +96,27 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImageFileNameToImagePathConverter.cs" />
+    <Compile Include="Layout\PageLayoutBorder.xaml.cs">
+      <DependentUpon>PageLayoutBorder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PageLayoutGrid.xaml.cs">
+      <DependentUpon>PageLayoutGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PageLayoutRelativePanel.xaml.cs">
+      <DependentUpon>PageLayoutRelativePanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PageLayoutStackPanelHorizontal.xaml.cs">
+      <DependentUpon>PageLayoutStackPanelHorizontal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PageLayoutStackPanelVertical.xaml.cs">
+      <DependentUpon>PageLayoutStackPanelVertical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PageLayoutVariableWidthWrapGridHorizontal.xaml.cs">
+      <DependentUpon>PageLayoutVariableWidthWrapGridHorizontal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PageLayoutVariableWidthWrapGridVertical.xaml.cs">
+      <DependentUpon>PageLayoutVariableWidthWrapGridVertical.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageHome.xaml.cs">
       <DependentUpon>PageHome.xaml</DependentUpon>
     </Compile>
@@ -115,6 +136,30 @@
     <None Include="ISoftware.Xamarin.Platforms.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Icons\LayoutBorder.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutBorder.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutBorder.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutConstraint.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutConstraint.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutConstraint.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutGrid.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutGrid.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutGrid.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutHorizontal.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutHorizontal.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutHorizontal.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutRelative.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutRelative.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutRelative.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutVertical-scale-200.png" />
+    <Content Include="Assets\Icons\LayoutVertical.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutVertical.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutWrapGridHorizontal.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutWrapGridHorizontal.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutWrapGridHorizontal.scale-300.png" />
+    <Content Include="Assets\Icons\LayoutWrapGridVertical.scale-100.png" />
+    <Content Include="Assets\Icons\LayoutWrapGridVertical.scale-200.png" />
+    <Content Include="Assets\Icons\LayoutWrapGridVertical.scale-300.png" />
     <Content Include="Assets\TitleImages\TitleImageHome.scale-100.png" />
     <Content Include="Assets\TitleImages\TitleImageHome.scale-200.png" />
     <Content Include="Assets\TitleImages\TitleImageHome.scale-300.png" />
@@ -142,6 +187,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Layout\PageLayoutBorder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layout\PageLayoutGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layout\PageLayoutRelativePanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layout\PageLayoutStackPanelHorizontal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layout\PageLayoutStackPanelVertical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layout\PageLayoutVariableWidthWrapGridHorizontal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layout\PageLayoutVariableWidthWrapGridVertical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageHome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
