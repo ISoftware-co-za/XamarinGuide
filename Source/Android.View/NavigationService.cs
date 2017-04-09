@@ -43,6 +43,8 @@ namespace ISoftware.Xamarin.Platforms.View.Android
                     activityType = typeof(ActivityLayoutLinearLayoutHorizontal);
                 else if (identifier == "RelativeLayout")
                     activityType = typeof(ActivityLayoutRelativeLayout);
+                else if (identifier == "FrameLayout")
+                    activityType = typeof(ActivityLayoutFrameLayout);
 
                 Intent navigationIntent = new Intent(_context, activityType);
 

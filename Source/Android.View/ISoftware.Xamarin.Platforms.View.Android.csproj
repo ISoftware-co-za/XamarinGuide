@@ -98,6 +98,7 @@
   <ItemGroup>
     <Compile Include="Layout\ActivityLayoutLinearLayoutHorizontal.cs" />
     <Compile Include="Layout\ActivityLayoutLinearLayoutVertical.cs" />
+    <Compile Include="Layout\ActivityLayoutFrameLayout.cs" />
     <Compile Include="Layout\ActivityLayoutRelativeLayout.cs" />
     <Compile Include="AndroidApplication.cs" />
     <Compile Include="ActivityMain.cs" />
@@ -124,6 +125,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\LayoutRelativeLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LayoutFrameLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -239,6 +243,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\LayoutVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LayoutBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\LayoutBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\LayoutBorder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

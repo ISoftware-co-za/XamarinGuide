@@ -56,6 +56,8 @@ namespace ISoftware.Xamarin.Platforms.UWP
                 pageType = typeof(PageLayoutVariableWidthWrapGridVertical);
             else if (identifier == "WrapGridHorizontal")
                 pageType = typeof(PageLayoutVariableWidthWrapGridHorizontal);
+            else if (identifier == "AbsoluteLayout")
+                pageType = typeof(PageLayoutAbsolute);
             else
                 throw new DeveloperException($"Cannot navigate to {identifier} as it is an undefined destination.");
 

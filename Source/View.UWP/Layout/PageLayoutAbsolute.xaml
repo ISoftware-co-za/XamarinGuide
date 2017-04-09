@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ISoftware.Xamarin.Platforms.UWP.Layout.PageLayoutAbsolute"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uwp="using:ISoftware.Xamarin.Platforms.UWP"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <uwp:Toolbar Grid.Row="0" Title="Grid" />
+
+        <Canvas Grid.Row="1">
+            <Border Background="{StaticResource YellowBrush}" Height="200" Width="200"></Border>
+            <Border Canvas.Top="50" Canvas.Left="50" Background="{StaticResource GreyBrush}" Height="200" Width="200"></Border>
+            <Border Canvas.Top="100" Canvas.Left="100" Background="{StaticResource SteelBlueBrush}" Height="200" Width="200"></Border>
+            <Border Canvas.Top="150" Canvas.Left="150" Background="{StaticResource RedBrush}" Height="200" Width="200"></Border>
+        </Canvas>
+        
+    </Grid>
+</Page>

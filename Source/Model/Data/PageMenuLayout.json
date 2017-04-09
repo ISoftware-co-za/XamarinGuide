@@ -57,7 +57,7 @@
     },
     {
       "Identifier": "WrapGridVertical",
-      "Label": "Wrapping Layout",
+      "Label": "Vertical Wrap Layout",
       "Description": "Layout widgets in colums that wrap.",
       "Image": "LayoutWrapGridVertical.png",
       "SupportedOnAndroid": "false",
@@ -66,12 +66,30 @@
     },
     {
       "Identifier": "WrapGridHorizontal",
-      "Label": "Wrapping Layout",
+      "Label": "Horizontal Wrap Layout",
       "Description": "Layout widgets in rows that wrap.",
       "Image": "LayoutWrapGridHorizontal.png",
       "SupportedOnAndroid": "false",
       "SupportedOniOS": "false",
       "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "AbsoluteLayout",
+      "Label": "Absolute Layout",
+      "Description": "Set position and size of widgets.",
+      "Image": "LayoutAbsolute.png",
+      "SupportedOnAndroid": "false",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "true"
+    },
+    {
+      "Identifier": "FrameLayout",
+      "Label": "Frame Layout",
+      "Description": "Scale single child.",
+      "Image": "LayoutBorder.png",
+      "SupportedOnAndroid": "true",
+      "SupportedOniOS": "false",
+      "SupportedOnWUP": "false"
     }
   ]
 }
